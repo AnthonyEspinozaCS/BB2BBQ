@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Back 2 New BBQ</title>
+    <meta name="description" content="A service to restore your grill back to new." />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <script defer src="/src/nav.js"></script>
+    <script src="https://kit.fontawesome.com/1f9c2028d8.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="flex">
+    <header class="header">
+      <div class="header__logo">
+        <img src="https://via.placeholder.com/100" />
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+        <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="40px" height="40px">
+          <rect class="line top" width="80" height="10" x="10" y="25" rx="5"></rect>
+          <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
+          <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+        </svg>
+      </button>
+      <nav>
+        <ul id="primary-navigation" class="header__nav" data-visible="false">
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/pricing.html">Pricing</a></li>
+          <li><a href="/before_after.html">Before & After</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/call.html">Request A Call</a></li>
+          <button class="header__button">1-800-888-8888</button>
+          <button class="header__button">Book Online</button>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero flex">
+        <h1 class="hero__header container">
+          Back 2 New
+          <br />
+          BBQ
+        </h1>
+
+        <p class="hero__text container">Let us handle the cleaning, and you get back to what you love.</p>
+      </section>
+
+      <!--About Us Section-->
+      <section class="section__1 flex container">
+        <h2 class="section__header">
+          <span class="bold">Back 2 New BBQ</span>
+          is a mobile cleaning service that is dedicated to restoring and reinvograting your grill.
+        </h2>
+        <picture>
+          <source media="(max-width: 600px" srcset="/src/images/guarantee-m.png" />
+          <source media="(min-width: 601px" srcset="/src/images/guarantee.png" />
+          <img aria-hidden="true" decoding="async" loading="lazy" src="/src/images/guarantee-m.png" alt="Satisfaction Guarantee sticker." width="375" height="375" />
+        </picture>
+      </section>
+
+      <!--Services Section-->
+      <section class="section__2 flex container center">
+        <div class="section__card flex fs-header-2">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <h3 class="fs-header-3">Repair</h3>
+          <p class="fs-paragraph">Does your grill need some TLC? Let our technicians handle it.</p>
+          <button class="card__button fs-paragraph">Learn More</button>
+        </div>
+        <div class="section__card flex fs-header-2">
+          <i class="fa-solid fa-hand-sparkles"></i>
+          <h3 class="fs-header-3">Cleaning</h3>
+          <p class="fs-paragraph">The only thing a grill should add to food is flavor.</p>
+          <button class="card__button fs-paragraph">Learn More</button>
+        </div>
+        <div class="section__card flex fs-header-2">
+          <i class="fa-solid fa-truck-front"></i>
+          <h3 class="fs-header-3">Mobile</h3>
+          <p class="fs-paragraph">We make taking care of your grill easy and convenient.</p>
+          <button class="card__button fs-paragraph">Learn More</button>
+        </div>
+      </section>
+
+      <!--Reviews Section-->
+      <section class="section__3 center">
+        <h2 class="section__3--header fs-header-2">Back 2 New Happy Customers</h2>
+        <img src="/src/images/stars.png" alt="5 Red Stars" />
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="footer__container">
+        <section class="footer__right-section">
+          <div class="footer_logo">
+            <a href="/index.html">
+              <img src="https://via.placeholder.com/100" />
+            </a>
+          </div>
+          <p class="footer__right-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, nesciunt!</p>
+        </section>
+        <section class="footer__left-section flex">
+          <ul class="footer__links">
+            <li class="footer__link-item">
+              <h2 class="footer__link-header">About</h2>
+            </li>
+            <li class="footer__link-item">
+              <a href="/index.html">Home</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="/about.html">About</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="/pricing.html">Pricing</a>
+            </li>
+            <li class="footer__link-item">
+              <a href="/before_after.html">Before & After</a>
+            </li>
+          </ul>
+          <ul class="footer__links">
+            <li class="footer__link-item">
+              <h3 class="footer__link-header">Reach Out</h3>
+            </li>
+            <li class="footer__link-item">
+              <a href="/contact.html">Contact Us</a>
+            </li>
+            <li class="footer__link-item footer__link-item--phone">
+              <a href="tel:702-555-5555">(702)555-5555</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </footer>
+    <script src="" async defer></script>
+  </body>
+</html>
