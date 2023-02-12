@@ -11,6 +11,7 @@
     <meta name="description" content="A service to restore your grill back to new." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/pricing.css" />
     <script defer src="/src/nav.js"></script>
   </head>
   <body class="flex">
@@ -38,8 +39,54 @@
       </nav>
     </header>
 
+    <main>
+      <section class="pricing__hero center">
+        <h1 class="pricing__hero-header fs-header-1">Pricing</h1>
+        <picture>
+          <source media="(max-width: 600px" srcset="/src/images/value-m.jpg" />
+          <source media="(min-width: 601px" srcset="/src/images/value.jpg" />
+          <img aria-hidden="true" decoding="async" src="/src/images/value-m.jpg" alt="A scale showing more value than price." />
+        </picture>
+      </section>
+
+      <section class="pricing__section-1 container">
+        <h2 class="pricing__section-header fs-header-2 center">Cleaning Pricing</h2>
+        <section class="pricing__card-section ">
+          <div class="pricing__card fs-paragraph">
+            <h2 class="fs-header-2">Bundle #1</h1>
+              <p>Our basic bundle. We'll come directly to you and bring that BBQ <span class="bold">Back 2 New!</span>
+              This bundle includes:</p>
+              <ul>
+                <li>Full Grill Cleaning</li>
+                <li>One Side Burner</li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <a href="/schedule.html#schedule-link">Schedule Now</a>
+          </div>
+          <div class="pricing__card fs-paragraph">
+            <h2 class="fs-header-2">Bundle #2</h1>
+              <p>This bundle provides the most bang for your buck! Everything from Bundle #1 is included plus:</span>
+              </p>
+              <ul>
+                <li>Full Grill Cleaning</li>
+                <li>One Side Burner</li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <a href="/schedule.html#schedule-link">Schedule Now</a>
+          </div>
+        </section>
+
+        <h2 class="pricing__section-header fs-header-2 center">Repair Pricing</h2>
+
+      </section>
+    </main>
+
     <footer class="footer">
-      <section class="footer__right-section">
+      <section class="footer__right-section container">
         <div class="footer_logo">
           <a href="/index.html">
             <img src="/src/images/logo-black-outline.svg" />
@@ -47,7 +94,7 @@
         </div>
         <p class="footer__right-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, nesciunt!</p>
       </section>
-      <section class="footer__left-section flex">
+      <section class="footer__left-section flex container">
         <ul class="footer__links">
           <li class="footer__link-item">
             <h2 class="footer__link-header">About</h2>

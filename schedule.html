@@ -11,6 +11,8 @@
     <meta name="description" content="A service to restore your grill back to new." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/schedule.css" />
+    <script src="https://kit.fontawesome.com/1f9c2028d8.js" crossorigin="anonymous"></script>
     <script defer src="/src/nav.js"></script>
   </head>
   <body class="flex">
@@ -38,8 +40,67 @@
       </nav>
     </header>
 
+    <main>
+      <section class="schedule__hero center">
+        <h1 class="schedule__hero-header fs-header-1">Schedule Our Service</h1>
+        <p class="fs-paragraph container">We make scheduling your service easy and convenient. Simply select the service you'd like to schedule.</p>
+        <picture>
+          <source media="(max-width: 600px" srcset="/src/images/appointment-m.jpg" />
+          <source media="(min-width: 601px" srcset="/src/images/appointment.jpg" />
+          <img aria-hidden="true" decoding="async" src="/src/images/appointment-m.jpg" alt="A calendar and hourglass." />
+        </picture>
+      </section>
+
+      <section id="schedule-link" class="schedule__section-1 container center">
+        <section class="schedule__section-buttons flex" data-visible="true">
+          <a href="#target">
+            <button id="button-link-1" class="fs-header-1" onclick="linkDisplay(1)">
+              <i class="fa-solid fa-hand-sparkles"></i>
+              Cleaning
+            </button>
+          </a>
+          <a href="#target">
+            <button class="fs-header-1">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              Repair
+            </button>
+          </a>
+          <a href="#target">
+            <button class="fs-header-1">
+              <i class="fa-solid fa-phone"></i>
+              Other
+            </button>
+          </a>
+        </section>
+
+        <section id="target"></section>
+
+        <section class="schedule__section-links-1 hidden" data-visible="false">
+          <div class="schedule__left-side flex fs-header-3">
+            <button id="button-1" onclick="changeDisplay(1)">Bundle #1</button>
+
+            <!-- Calendly link widget begin -->
+            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anthony1337/grill-cleaning?background_color=333333&text_color=ffffff&primary_color=ffffff'});return false;">Bundle #2</a>
+            <!-- Calendly link widget end -->
+          </div>
+          <div class="schedule__right-side">
+            <!-- Calendly inline widget begin -->
+            <div
+              id="schedule-1"
+              class="calendly-inline-widget"
+              data-url="https://calendly.com/anthony1337/grill-cleaning?hide_gdpr_banner=1&background_color=333333&text_color=ffffff&primary_color=ffffff"
+              style="min-width: 320px; height: 95vh; display: none"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+          </div>
+        </section>
+      </section>
+    </main>
+
     <footer class="footer">
-      <section class="footer__right-section">
+      <section class="footer__right-section container">
         <div class="footer_logo">
           <a href="/index.html">
             <img src="/src/images/logo-black-outline.svg" />
@@ -47,7 +108,7 @@
         </div>
         <p class="footer__right-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, nesciunt!</p>
       </section>
-      <section class="footer__left-section flex">
+      <section class="footer__left-section flex container">
         <ul class="footer__links">
           <li class="footer__link-item">
             <h2 class="footer__link-header">About</h2>
@@ -78,6 +139,6 @@
         </ul>
       </section>
     </footer>
-    <script src="" async defer></script>
+    <script src="/src/scheduling.js" async defer></script>
   </body>
 </html>

@@ -44,6 +44,7 @@ ol[role="list"] {
 /* Set core root defaults */
 html {
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 html:focus-within {
   scroll-behavior: smooth;
@@ -71,7 +72,7 @@ a:any-link {
 }
 
 a:any-link:hover {
-  color: aqua;
+  text-decoration: underline black;
 }
 
 /* Make images easier to work with */
@@ -131,6 +132,10 @@ select {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 /* Components */
 button {
   padding: 0;
@@ -180,12 +185,20 @@ button {
 /* General Styles */
 .header {
   display: flex;
+  position: relative;
   min-height: 100px;
   max-width: 100%;
+  top: 0;
+  z-index: 8888;
   justify-content: space-between;
   align-items: center;
 
-  background: #333;
+  background: white;
+}
+
+.logo {
+  width: 125px;
+  padding: 10px;
 }
 
 .header__nav {
@@ -195,10 +208,14 @@ button {
   margin: 0;
   padding: 0;
 
-  background: #333;
+  background: white;
   list-style: none;
   text-align: center;
   text-decoration: none;
+}
+
+.header__nav a {
+  color: black;
 }
 
 @media (max-width: 1023px) {
@@ -207,8 +224,7 @@ button {
 
     position: fixed;
     z-index: 1000;
-    inset: 0 0 0 30%;
-    padding: min(30vh, 10rem) 0;
+    inset: 0 0 0 50%;
     place-content: center;
 
     font-size: clamp(1.5rem, 2vh, 2rem);
@@ -225,7 +241,12 @@ button {
   }
 
   .header__nav li {
+    padding-bottom: 1rem;
     border-bottom: 2px solid white;
+  }
+
+  .header__nav li:first-of-type {
+    margin-top: auto;
   }
 
   .mobile-nav-toggle {
@@ -249,6 +270,14 @@ button {
 
   .header__button {
     place-self: center;
+  }
+
+  .header__button:first-of-type {
+    margin-top: auto;
+  }
+
+  .header__button:last-child {
+    margin-bottom: 1rem;
   }
 }
 
@@ -281,13 +310,17 @@ button {
 
   align-items: center;
 
-  background-color: #333;
-  color: white;
+  background-color: white;
+  color: #333;
   text-align: center;
 }
 
 .footer__right-section {
   margin-inline: auto;
+}
+
+.footer img {
+  width: 200px;
 }
 
 .footer__right-section a {
@@ -343,6 +376,10 @@ button {
   text-align: center;
 }
 
+.footer__link-item a {
+  color: black;
+}
+
 .footer__link-item--phone {
   width: fit-content;
   margin: 0 auto;
@@ -380,7 +417,7 @@ button {
 
 .hero {
   flex-direction: column;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 125px);
   place-content: center;
   align-items: center;
 
@@ -407,6 +444,7 @@ button {
   font-size: var(--fs-header-1);
   font-weight: 700;
   text-align: center;
+  line-height: 1.2;
 }
 
 .hero__header::after {
@@ -499,8 +537,12 @@ button {
 }
 
 .card__button:hover {
-  color: white;
   background-color: firebrick;
+  transform: scale(110%);
+}
+
+.card__button > a:hover {
+  text-decoration: none;
 }
 
 @media (min-width: 1024px) {
@@ -583,4 +625,10 @@ button {
   grid-area: review;
 
   max-height: fit-content;
+}
+
+.section__3 button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }

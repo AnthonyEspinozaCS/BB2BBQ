@@ -11,6 +11,7 @@
     <meta name="description" content="A service to restore your grill back to new." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/about.css" />
     <script defer src="/src/nav.js"></script>
   </head>
   <body class="flex">
@@ -38,8 +39,52 @@
       </nav>
     </header>
 
+    <main>
+      <section class="about__hero">
+        <h1 class="about__hero-header container fs-header-1">About Us</h1>
+        <picture>
+          <source media="(max-width: 600px" srcset="/src/images/LV-strip-m.jpg" />
+          <source media="(min-width: 601px" srcset="/src/images/LV-strip.jpg" />
+          <img aria-hidden="true" decoding="async" src="/src/images/LV-strip-m.jpg" alt="The Las Vegas Skyline" />
+        </picture>
+      </section>
+
+      <section class="about__section-1 container center">
+        <h2 class="about__section-header fs-header-2">A Household Name</h2>
+        <p class="fs-paragraph">
+          Serving the Las Vegas community for over 10 years, we take pride in being someone you can trust. We're a comprehensive, mobile BBQ
+          <span>cleaning</span>
+          &
+          <span>repair</span>
+          service. Our experienced technicians ready to fix that broken ignition, and deep clean those grates.
+        </p>
+
+        <picture class="section__image-box">
+          <source media="(max-width: 600px" srcset="/src/images/grate-m.jpg" />
+          <source media="(min-width: 601px" srcset="/src/images/grate.jpg" />
+          <img aria-hidden="true" decoding="async" src="/src/images/grate-m.jpg" alt="A brush scraping a grate." />
+        </picture>
+        <h2 class="about__section-header fs-header-2">Deep Clean</h2>
+        <p class="fs-paragraph">
+          Your household's grill can harbor dirt, stuck-on food, and germs. All of these things can reduce the quality of your food, and even make your family sick. There's a common misconception that you can simply burn all of these things off. The
+          reality is that grills that are not properly cleaned and maintained can accumulate bacteria, mold, rodent droppings, rust, and grease. Grease fires are a silent threat that can lead to a dangerous situation for your home and family. Our
+          technicians make sure this situation is something you never have to think about.
+        </p>
+        <button class="card__button fs-paragraph">Get a Quote</button>
+
+        <picture class="section__image-box">
+          <source media="(max-width: 600px" srcset="/src/images/repairman-m.jpg" />
+          <source media="(min-width: 601px" srcset="/src/images/repairman.jpg" />
+          <img aria-hidden="true" decoding="async" src="/src/images/repairman-m.jpg" alt="A repairman's toolbox." />
+        </picture>
+        <h2 class="about__section-header fs-header-2">Grill Repair</h2>
+        <p class="fs-paragraph">From the grates to the valves and everything in between, let our knowledgeable technicians handle the details. We'll start with an inspection, and thoroughly diagnose the necessary repairs. General maintenance is vital to a grill's safety and longevity, we'd love to the opportunity to show you we can bring your gril <span>Back 2 New</span>.</span></p>
+        <button class="card__button fs-paragraph">Get a Quote</button>
+      </section>
+    </main>
+
     <footer class="footer">
-      <section class="footer__right-section">
+      <section class="footer__right-section container">
         <div class="footer_logo">
           <a href="/index.html">
             <img src="/src/images/logo-black-outline.svg" />
@@ -47,7 +92,7 @@
         </div>
         <p class="footer__right-paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, nesciunt!</p>
       </section>
-      <section class="footer__left-section flex">
+      <section class="footer__left-section flex container">
         <ul class="footer__links">
           <li class="footer__link-item">
             <h2 class="footer__link-header">About</h2>
