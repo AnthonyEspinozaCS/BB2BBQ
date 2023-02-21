@@ -267,18 +267,6 @@ button {
   .hamburger {
     display: block;
   }
-
-  .header__button {
-    place-self: center;
-  }
-
-  .header__button:first-of-type {
-    margin-top: auto;
-  }
-
-  .header__button:last-child {
-    margin-bottom: 1rem;
-  }
 }
 
 @media (min-width: 1024px) {
