@@ -157,7 +157,7 @@ button {
 }
 
 .mobile-nav-toggle[aria-expanded="true"] .line {
-  transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+  transition: y 300ms ease-in, transform 300ms ease-in 300ms, opacity 0ms 300ms;
 }
 
 .mobile-nav-toggle[aria-expanded="true"] :is(.top, .bottom) {
@@ -165,7 +165,7 @@ button {
 }
 
 .mobile-nav-toggle[aria-expanded="true"] .top {
-  rotate: 45deg;
+  transform: rotate(45deg);
 }
 
 .mobile-nav-toggle[aria-expanded="true"] .middle {
@@ -173,7 +173,7 @@ button {
 }
 
 .mobile-nav-toggle[aria-expanded="true"] .bottom {
-  rotate: -45deg;
+  transform: rotate(-45deg);
 }
 
 .header__button:hover,
