@@ -15,6 +15,12 @@
     <script src="https://kit.fontawesome.com/1f9c2028d8.js" crossorigin="anonymous"></script>
   </head>
   <body class="flex">
+    <div class="overlay-layer hidden"></div>
+    <section class="overlay-section flex hidden" data-visible="false">
+      <h2 class="fs-header-3">Request A Call</h2>
+      <button id="overlay-button"><i class="fa-solid fa-x fs-paragraph"></i></button>
+    </section>
+
     <header class="header">
       <div class="header__logo">
         <a href="/index.html"><img class="logo" src="/src/images/logo-black-outline.svg" /></a>
@@ -32,9 +38,7 @@
           <li><a href="/pricing.html">Pricing</a></li>
           <li><a href="/before_after.html">Before & After</a></li>
           <li><a href="/schedule.html">Schedule</a></li>
-          <li><a href="/call.html">Request A Call</a></li>
-          <button class="header__button">1-800-888-8888</button>
-          <button class="header__button">Book Online</button>
+          <li><a id="req-button" href="/call.html">Request A Call</a></li>
         </ul>
       </nav>
     </header>
