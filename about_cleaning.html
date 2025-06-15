@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <title>Back 2 New BBQ</title>
+    <meta
+      name="description"
+      content="A service to restore your grill back to new." />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="/src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1f9c2028d8.js"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="/src/nav.js"></script>
+  </head>
+  <body class="flex">
+    <div class="overlay-layer hidden"></div>
+    <section
+      class="overlay-section flex hidden"
+      data-visible="false">
+      <h2 class="fs-paragraph">Request A Call</h2>
+      <button id="overlay-button"><i class="fa-solid fa-x fs-paragraph"></i></button>
+    </section>
+
+    <header class="header">
+      <div class="header__logo">
+        <a href="/index.html">
+          <img
+            class="logo"
+            src="/src/images/logo-black-outline.svg" />
+        </a>
+      </div>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false">
+        <svg
+          fill="var(--button-color)"
+          class="hamburger"
+          viewBox="0 0 100 100"
+          width="40px"
+          height="40px">
+          <rect
+            class="line top"
+            width="80"
+            height="10"
+            x="10"
+            y="25"
+            rx="5"></rect>
+          <rect
+            class="line middle"
+            width="80"
+            height="10"
+            x="10"
+            y="45"
+            rx="5"></rect>
+          <rect
+            class="line bottom"
+            width="80"
+            height="10"
+            x="10"
+            y="65"
+            rx="5"></rect>
+        </svg>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          class="header__nav"
+          data-visible="false">
+          <li class="dropdown">
+            Services
+            <ul class="dropdown-content">
+              <li><a href="/pricing_cleaning.html">BBQ Cleaning</a></li>
+              <li><a href="/pricing_repair.html">BBQ Repair</a></li>
+              <li><a href="/pricing_sales.html">BBQ Replacement/Sales</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            About
+            <ul class="dropdown-content">
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/about_cleaning.html">About BBQ Cleaning</a></li>
+              <li><a href="/about_zero.html">Zero Contact Services</a></li>
+            </ul>
+          </li>
+          <!--           <li><a href="/about.html">About</a></li>
+          <li><a href="/pricing.html">Pricing</a></li> -->
+          <li><a href="/before_after.html">Before & After</a></li>
+          <li><a href="/schedule.html">Schedule</a></li>
+          <li>
+            <a
+              href="tel:702-480-4234"
+              class="nav__cta">
+              Call or Text a Pro 📞
+              <span class="nav__span">702-480-4234</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero flex">
+        <video
+          playsinline
+          autoplay
+          muted
+          loop
+          poster
+          class="hero__video">
+          <source
+            src="src/about_cleaning.mp4"
+            type="video/mp4 " />
+        </video>
+        <h1 class="hero__header container">BBQ CLEANING BY THE PROS</h1>
+      </section>
+
+      <section class="cleaning__section container flex">
+        <div class="left">
+          <h2>Why Clean your BBQ?</h2>
+          <p>Many people attempt to sanitize their grills by simply burning off debris and residue, but this method is largely ineffective.</p>
+          <p>Without routine cleaning and care, your BBQ grill can become a breeding ground for bacteria, mold, rust, and even rodent droppings.</p>
+          <p>A thorough deep cleaning ensures your grill is safe and hygienic for preparing meals for your family and friends. Regular BBQ maintenance can also extend the lifespan and performance of your grill.</p>
+        </div>
+        <div class="right">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="/src/images/about_tall-m.jpg" />
+            <source
+              media="(min-width: 601px)"
+              srcset="/src/images/about_tall.jpg" />
+            <img
+              class="cleaning__image"
+              aria-hidden="true"
+              decoding="async"
+              loading="lazy"
+              src="/src/images/about_tall.jpg"
+              alt="A before and after of a grill."
+              width="375"
+              height="375" />
+          </picture>
+        </div>
+      </section>
+
+      <section class="cleaning__section container flex">
+        <div class="right image__div">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="/src/images/clean-grill-m.jpg" />
+            <source
+              media="(min-width: 601px)"
+              srcset="/src/images/clean-grill.jpg" />
+            <img
+              class="cleaning__image"
+              aria-hidden="true"
+              decoding="async"
+              loading="lazy"
+              src="/src/images/clean-grill.jpg"
+              alt="Dad and daughter grilling."
+              width="375"
+              height="375" />
+          </picture>
+        </div>
+        <div class="left">
+          <h2>Clean Grills, Happy Meals — The Proof Is Always in the Taste</h2>
+          <p>
+            Removing residual char and buildup from your grill isn’t just about cleanliness—it’s a health consideration. Studies have shown that burnt food particles and accumulated grease can increase exposure to harmful carcinogens such as
+            heterocyclic amines (HCAs) and polycyclic aromatic hydrocarbons (PAHs). In short, heavy buildup = higher risk.
+          </p>
+          <p>
+            Our professional BBQ cleaning service is designed to target those risks. We don’t just wipe down surfaces—we use a multi-step process that includes precision scraping, abrasive scrubbing, and high-temperature steam to break down and
+            remove deep-set residue from every corner of your grill. The result? A cleaner, safer cooking environment—and better-tasting food.
+          </p>
+          <a
+            href="/before_after.html"
+            class="card__button fs-paragraph">
+            Before & After
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="footer__right-section">
+        <div class="footer_logo">
+          <a href="/index.html">
+            <img src="/src/images/logo-black-outline.svg" />
+          </a>
+        </div>
+        <p class="footer__right-paragraph">Clean grills, happy meals!</p>
+      </section>
+      <section class="footer__left-section flex">
+        <ul class="footer__links">
+          <li class="footer__link-item">
+            <h2 class="footer__link-header">About</h2>
+          </li>
+          <li class="footer__link-item">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/about.html">About Us</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/about_cleaning.html">About BBQ Cleaning</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/pricing_cleaning.html">BBQ Cleaning Pricing</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/pricing_repair.html">BBQ Repair Pricing</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/before_after.html">Before & After</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/FAQs">FAQs</a>
+          </li>
+        </ul>
+        <ul class="footer__links">
+          <li class="footer__link-item">
+            <h3 class="footer__link-header">Reach Out</h3>
+          </li>
+          <li class="footer__link-item">
+            <a href="/schedule.html">Schedule Service</a>
+          </li>
+          <li class="footer__link-item footer__link-item--phone">
+            <a href="tel:702-480-4234">702-480-4234</a>
+          </li>
+        </ul>
+      </section>
+      <section class="disclosures">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/Terms_of_Use.html">Terms of Use</a>
+      </section>
+    </footer>
+    <script
+      src=""
+      async
+      defer></script>
+  </body>
+</html>

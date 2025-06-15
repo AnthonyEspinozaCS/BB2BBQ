@@ -6,40 +6,112 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
     <title>Back 2 New BBQ</title>
-    <meta name="description" content="A service to restore your grill back to new." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <link rel="stylesheet" href="/src/about.css" />
-    <script src="https://kit.fontawesome.com/1f9c2028d8.js" crossorigin="anonymous"></script>
-    <script defer src="/src/nav.js"></script>
+    <meta
+      name="description"
+      content="A service to restore your grill back to new." />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="/src/style.css" />
+    <link
+      rel="stylesheet"
+      href="/src/about.css" />
+    <script
+      src="https://kit.fontawesome.com/1f9c2028d8.js"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="/src/nav.js"></script>
   </head>
   <body class="flex">
     <div class="overlay-layer hidden"></div>
-    <section class="overlay-section flex hidden" data-visible="false">
+    <section
+      class="overlay-section flex hidden"
+      data-visible="false">
       <h2 class="fs-paragraph">Request A Call</h2>
       <button id="overlay-button"><i class="fa-solid fa-x fs-paragraph"></i></button>
     </section>
 
     <header class="header">
       <div class="header__logo">
-        <a href="/index.html"><img class="logo" src="/src/images/logo-black-outline.svg" /></a>
+        <a href="/index.html">
+          <img
+            class="logo"
+            src="/src/images/logo-black-outline.svg" />
+        </a>
       </div>
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-        <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="40px" height="40px">
-          <rect class="line top" width="80" height="10" x="10" y="25" rx="5"></rect>
-          <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
-          <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false">
+        <svg
+          fill="var(--button-color)"
+          class="hamburger"
+          viewBox="0 0 100 100"
+          width="40px"
+          height="40px">
+          <rect
+            class="line top"
+            width="80"
+            height="10"
+            x="10"
+            y="25"
+            rx="5"></rect>
+          <rect
+            class="line middle"
+            width="80"
+            height="10"
+            x="10"
+            y="45"
+            rx="5"></rect>
+          <rect
+            class="line bottom"
+            width="80"
+            height="10"
+            x="10"
+            y="65"
+            rx="5"></rect>
         </svg>
       </button>
       <nav>
-        <ul id="primary-navigation" class="header__nav" data-visible="false">
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/pricing.html">Pricing</a></li>
+        <ul
+          id="primary-navigation"
+          class="header__nav"
+          data-visible="false">
+          <li class="dropdown">
+            Services
+            <ul class="dropdown-content">
+              <li><a href="/pricing_cleaning.html">BBQ Cleaning</a></li>
+              <li><a href="/pricing_repair.html">BBQ Repair</a></li>
+              <li><a href="/pricing_sales.html">BBQ Replacement/Sales</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            About
+            <ul class="dropdown-content">
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/about_cleaning.html">About BBQ Cleaning</a></li>
+              <li><a href="/about_zero.html">Zero Contact Services</a></li>
+            </ul>
+          </li>
+          <!--           <li><a href="/about.html">About</a></li>
+          <li><a href="/pricing.html">Pricing</a></li> -->
           <li><a href="/before_after.html">Before & After</a></li>
           <li><a href="/schedule.html">Schedule</a></li>
-          <li><a id="req-button" href="/call.html">Request A Call</a></li>
+          <li>
+            <a
+              href="tel:702-480-4234"
+              class="nav__cta">
+              Call or Text a Pro 📞
+              <span class="nav__span">702-480-4234</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -48,9 +120,17 @@
       <section class="about__hero">
         <h1 class="about__hero-header container fs-header-1">About Us</h1>
         <picture>
-          <source media="(max-width: 600px" srcset="/src/images/LV-strip-m.jpg" />
-          <source media="(min-width: 601px" srcset="/src/images/LV-strip.jpg" />
-          <img aria-hidden="true" decoding="async" src="/src/images/LV-strip-m.jpg" alt="The Las Vegas Skyline" />
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/LV-strip-m.jpg" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/LV-strip.jpg" />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/src/images/LV-strip-m.jpg"
+            alt="The Las Vegas Skyline" />
         </picture>
       </section>
 
@@ -61,13 +141,59 @@
           <span>cleaning</span>
           &
           <span>repair</span>
-          service. Our experienced technicians ready to fix that broken ignition, and deep clean those grates.
+          service. Our experienced technicians are ready to bring that grill
+          <span>Back 2 New</span>, and deep clean those grates.
         </p>
 
+        <h2 class="fs-header-3">Our Values</h2>
+
+        <article class="about__values">
+          <div class="value">
+            <h2>Purpose</h2>
+            <p>Our goal is to ensure every household enjoys a safer and healthier way to grill.</p>
+          </div>
+          <div class="value">
+            <h2>Trust</h2>
+            <p>We honor our commitments and stand firmly behind our word.</p>
+          </div>
+          <div class="value">
+            <h2>Integrity</h2>
+            <p>Our words and actions are guided by honesty and strong moral principles.</p>
+          </div>
+          <div class="value">
+            <h2>Service</h2>
+            <p>We strive to deliver outstanding support to our customers and community.</p>
+          </div>
+          <div class="value">
+            <h2>Respect</h2>
+            <p>We treat everyone—including our team, customers, and even competitors—with dignity and good humor.</p>
+          </div>
+          <div class="value">
+            <h2>Humility</h2>
+            <p>We’re thankful for the people in our lives and recognize that our success is made possible by others.</p>
+          </div>
+          <div class="value">
+            <h2>Ethics</h2>
+            <p>We are committed to making decisions that are morally sound and truthful.</p>
+          </div>
+          <div class="value">
+            <h2>Kindness</h2>
+            <p>We believe compassion and gentleness are powerful and essential qualities.</p>
+          </div>
+        </article>
+
         <picture class="section__image-box">
-          <source media="(max-width: 600px" srcset="/src/images/grate-m.jpg" />
-          <source media="(min-width: 601px" srcset="/src/images/grate.jpg" />
-          <img aria-hidden="true" decoding="async" src="/src/images/grate-m.jpg" alt="A brush scraping a grate." />
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/grate-m.jpg" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/grate.jpg" />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/src/images/grate-m.jpg"
+            alt="A brush scraping a grate." />
         </picture>
         <h2 class="about__section-header fs-header-2">Deep Clean</h2>
         <p class="fs-paragraph">
@@ -75,21 +201,41 @@
           reality is that grills that are not properly cleaned and maintained can accumulate bacteria, mold, rodent droppings, rust, and grease. Grease fires are a silent threat that can lead to a dangerous situation for your home and family. Our
           technicians make sure this situation is something you never have to think about.
         </p>
-        <button class="card__button fs-paragraph">Get a Quote</button>
+        <a
+          class="card__button fs-paragraph"
+          href="/pricing_cleaning.html">
+          Get a Quote
+        </a>
 
         <picture class="section__image-box">
-          <source media="(max-width: 600px" srcset="/src/images/repairman-m.jpg" />
-          <source media="(min-width: 601px" srcset="/src/images/repairman.jpg" />
-          <img aria-hidden="true" decoding="async" src="/src/images/repairman-m.jpg" alt="A repairman's toolbox." />
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/repairman-m.jpg" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/repairman.jpg" />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/src/images/repairman-m.jpg"
+            alt="A repairman's toolbox." />
         </picture>
         <h2 class="about__section-header fs-header-2">Grill Repair</h2>
-        <p class="fs-paragraph">From the grates to the valves and everything in between, let our knowledgeable technicians handle the details. We'll start with an inspection, and thoroughly diagnose the necessary repairs. General maintenance is vital to a grill's safety and longevity, we'd love to the opportunity to show you we can bring your gril <span>Back 2 New</span>.</span></p>
-        <button class="card__button fs-paragraph">Get a Quote</button>
+        <p class="fs-paragraph">
+          From the grates to the valves and everything in between, let our knowledgeable technicians handle the details. We'll start with an inspection, and thoroughly diagnose the necessary repairs. General maintenance is vital to a grill's safety
+          and longevity, we'd love to the opportunity to show you we can bring your grill
+          <span>Back 2 New</span>.
+        </p>
+        <a
+          class="card__button fs-paragraph"
+          href="/pricing_repair.html">
+          Get a Quote
+        </a>
       </section>
     </main>
 
     <footer class="footer">
-      <section class="footer__right-section container">
+      <section class="footer__right-section">
         <div class="footer_logo">
           <a href="/index.html">
             <img src="/src/images/logo-black-outline.svg" />
@@ -97,7 +243,7 @@
         </div>
         <p class="footer__right-paragraph">Clean grills, happy meals!</p>
       </section>
-      <section class="footer__left-section flex container">
+      <section class="footer__left-section flex">
         <ul class="footer__links">
           <li class="footer__link-item">
             <h2 class="footer__link-header">About</h2>
@@ -106,13 +252,22 @@
             <a href="/index.html">Home</a>
           </li>
           <li class="footer__link-item">
-            <a href="/about.html">About</a>
+            <a href="/about.html">About Us</a>
           </li>
           <li class="footer__link-item">
-            <a href="/pricing.html">Pricing</a>
+            <a href="/about_cleaning.html">About BBQ Cleaning</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/pricing_cleaning.html">BBQ Cleaning Pricing</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/pricing_repair.html">BBQ Repair Pricing</a>
           </li>
           <li class="footer__link-item">
             <a href="/before_after.html">Before & After</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/FAQs">FAQs</a>
           </li>
         </ul>
         <ul class="footer__links">
@@ -123,11 +278,18 @@
             <a href="/schedule.html">Schedule Service</a>
           </li>
           <li class="footer__link-item footer__link-item--phone">
-            <a href="tel:702-555-5555">(702)555-5555</a>
+            <a href="tel:702-480-4234">702-480-4234</a>
           </li>
         </ul>
       </section>
+      <section class="disclosures">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/Terms_of_Use.html">Terms of Use</a>
+      </section>
     </footer>
-    <script src="" async defer></script>
+    <script
+      src=""
+      async
+      defer></script>
   </body>
 </html>

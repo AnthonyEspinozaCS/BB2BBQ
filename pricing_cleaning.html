@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <title>Back 2 New BBQ</title>
+    <meta
+      name="description"
+      content="A service to restore your grill back to new." />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="/src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1f9c2028d8.js"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="/src/nav.js"></script>
+  </head>
+  <body class="flex">
+    <div class="overlay-layer hidden"></div>
+    <section
+      class="overlay-section flex hidden"
+      data-visible="false">
+      <h2 class="fs-paragraph">Request A Call</h2>
+      <button id="overlay-button"><i class="fa-solid fa-x fs-paragraph"></i></button>
+    </section>
+
+    <header class="header">
+      <div class="header__logo">
+        <a href="/index.html">
+          <img
+            class="logo"
+            src="/src/images/logo-black-outline.svg" />
+        </a>
+      </div>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false">
+        <svg
+          fill="var(--button-color)"
+          class="hamburger"
+          viewBox="0 0 100 100"
+          width="40px"
+          height="40px">
+          <rect
+            class="line top"
+            width="80"
+            height="10"
+            x="10"
+            y="25"
+            rx="5"></rect>
+          <rect
+            class="line middle"
+            width="80"
+            height="10"
+            x="10"
+            y="45"
+            rx="5"></rect>
+          <rect
+            class="line bottom"
+            width="80"
+            height="10"
+            x="10"
+            y="65"
+            rx="5"></rect>
+        </svg>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          class="header__nav"
+          data-visible="false">
+          <li class="dropdown">
+            Services
+            <ul class="dropdown-content">
+              <li><a href="/pricing_cleaning.html">BBQ Cleaning</a></li>
+              <li><a href="/pricing_repair.html">BBQ Repair</a></li>
+              <li><a href="/pricing_sales.html">BBQ Replacement/Sales</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            About
+            <ul class="dropdown-content">
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/about_cleaning.html">About BBQ Cleaning</a></li>
+              <li><a href="/about_zero.html">Zero Contact Services</a></li>
+            </ul>
+          </li>
+          <!--           <li><a href="/about.html">About</a></li>
+          <li><a href="/pricing.html">Pricing</a></li> -->
+          <li><a href="/before_after.html">Before & After</a></li>
+          <li><a href="/schedule.html">Schedule</a></li>
+          <li>
+            <a
+              href="tel:702-480-4234"
+              class="nav__cta">
+              Call or Text a Pro 📞
+              <span class="nav__span">702-480-4234</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="cleaning__section flex container">
+      <div class="right image__div place_center">
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/crew-m.jpg" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/crew.jpg" />
+          <img
+            class="cleaning__image"
+            aria-hidden="true"
+            decoding="async"
+            loading="lazy"
+            src="/src/images/crew.jpg"
+            alt="4 men standing in front of a truck with a trailer."
+            width="375"
+            height="375" />
+        </picture>
+      </div>
+      <div class="left flex">
+        <img
+          class="cleaning__stars"
+          src="/src/images/stars.png"
+          alt="5 gold stars." />
+        <h1 class="header--deco">5-Star Rated. Fully Insured. BBQ & Smoker Cleaning You Can Trust.</h1>
+        <p>We’re fully insured and use an eco-friendly, professional-grade BBQ cleaning process that’s safe for both your grill and the environment.</p>
+        <p>Our pricing is straightforward and based on the size of your grill. Schedule your service online or contact us for a free, no-obligation estimate.</p>
+      </div>
+    </section>
+
+    <section class="cleaning__section flex container">
+      <div class="left left--sm fs-paragraph">
+        <h3 class="fs-header-3">Professional BBQ Cleaning</h3>
+        <p>All cleaning services are completed right at your location for maximum convenience.</p>
+        <ul class="cleaning__list">
+          <li class="flex">
+            <img
+              src="/src/images/bottle.svg"
+              alt="Spray bottle." />
+            Grill de-greasing & polishing
+          </li>
+          <li class="flex">
+            <img
+              src="/src/images/deep.svg"
+              alt="Man with gloves and cleaning supplies." />
+            Deep-cleaning of parts
+          </li>
+          <li class="flex">
+            <img
+              src="/src/images/inspect.svg"
+              alt="Magnifiying Glass." />
+            Inspection of Parts
+          </li>
+          <li class="flex">
+            <img
+              src="/src/images/repair.svg"
+              alt="Wrench." />
+            Tune-Up of parts
+          </li>
+        </ul>
+        <p>If we notice your grill needs any parts or repairs, we’ll provide a fair quote. For minor fixes, we’ll take care of them on the spot whenever possible.</p>
+      </div>
+      <div class="right place_center">
+        <div class="image__div--right">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="/src/images/finished_job-m.webp" />
+            <source
+              media="(min-width: 601px)"
+              srcset="/src/images/finished_job.webp" />
+            <img
+              class="cleaning__image"
+              aria-hidden="true"
+              decoding="async"
+              loading="lazy"
+              src="/src/images/finished_job.webp"
+              alt="Truck with trailer."
+              width="375"
+              height="375" />
+          </picture>
+        </div>
+        <div class="cleaning__cta flex">
+          <a
+            href="/schedule.html"
+            class="card__button">
+            Book Online
+          </a>
+          <a
+            href="tel:702-480-4234"
+            class="card__button">
+            Call 702-480-4234
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="table__section flex container">
+      <table class="cleaning__table fs-paragraph">
+        <thead>
+          <tr>
+            <th>Included in your service:</th>
+            <th>Express Cleaning</th>
+            <th>Deep Cleaning</th>
+          </tr>
+        </thead>
+        <tr>
+          <td>Top of the grates</td>
+          <td>
+            <img
+              src="/src/images/check.svg"
+              alt="checkmark." />
+          </td>
+          <td>
+            <img
+              src="/src/images/check.svg"
+              alt="checkmark." />
+          </td>
+        </tr>
+        <tr>
+          <td>Bottom of the grates</td>
+          <td></td>
+          <td>
+            <img
+              src="/src/images/check.svg"
+              alt="checkmark." />
+          </td>
+        </tr>
+        <tr>
+          <td>Grease Tray</td>
+          <td>
+            <img
+              src="/src/images/check.svg"
+              alt="checkmark." />
+          </td>
+          <td>
+            <img
+              src="/src/images/check.svg"
+              alt="checkmark." />
+          </td>
+        </tr>
+        <tr>
+          <td>Warming Tray</td>
+          <td>
+            <img
+              src="/src/images/check.svg"
+              alt="checkmark." />
+          </td>
+          <td>
+            <img
+              src="/src/images/check.svg"
+              alt="checkmark." />
+          </td>
+        </tr>
+        <tr>
+          <td>Grill Box</td>
+          <td>
+            <img
+              src="/src/images/check.svg"
+              alt="checkmark." />
+          </td>
+          <td>
+            <img
+              src="/src/images/check.svg"
+              alt="checkmark." />
+          </td>
+        </tr>
+        <tr>
+          <td>All movable parts</td>
+          <td>
+            <img
+              src="/src/images/check.svg"
+              alt="checkmark." />
+          </td>
+          <td>
+            <img
+              src="/src/images/check.svg"
+              alt="checkmark." />
+          </td>
+        </tr>
+        <tr>
+          <td>Diagnose any issues</td>
+          <td></td>
+          <td>
+            <img
+              src="/src/images/check.svg"
+              alt="checkmark." />
+          </td>
+        </tr>
+        <tr>
+          <td>Repair minor issues</td>
+          <td></td>
+          <td>
+            <img
+              src="/src/images/check.svg"
+              alt="checkmark." />
+          </td>
+        </tr>
+        <tr>
+          <td>Time Limit:</td>
+          <td>60 Minutes</td>
+          <td>2 Hours</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="cleaning__section cleaning__section--addons container">
+      <div class="addon">
+        <h3>Rodent Infestation Clean up</h3>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/rat-m.webp" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/rat.webp" />
+          <img
+            class="cleaning__addon"
+            aria-hidden="true"
+            decoding="async"
+            loading="lazy"
+            src="/src/images/rat.webp"
+            alt="Rat nest in a grill."
+            width="375"
+            height="375" />
+        </picture>
+      </div>
+      <div class="addon">
+        <h3>Crawl Space</h3>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/crawl-m.webp" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/crawl.webp" />
+          <img
+            class="cleaning__addon"
+            aria-hidden="true"
+            decoding="async"
+            loading="lazy"
+            src="/src/images/crawl.webp"
+            alt="A man cleaning a crawlspace."
+            width="375"
+            height="375" />
+        </picture>
+      </div>
+      <div class="addon">
+        <h3>Outside Pizza Oven</h3>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/pizza_oven-m.webp" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/pizza_oven.webp" />
+          <img
+            class="cleaning__addon img--left"
+            aria-hidden="true"
+            decoding="async"
+            loading="lazy"
+            src="/src/images/pizza_oven.webp"
+            alt="The exterior of a pizza oven."
+            width="375"
+            height="375" />
+        </picture>
+      </div>
+      <div class="addon">
+        <h3>Hood</h3>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/hood-m.webp" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/hood.webp" />
+          <img
+            class="cleaning__addon"
+            aria-hidden="true"
+            decoding="async"
+            loading="lazy"
+            src="/src/images/hood.webp"
+            alt="A grill with a hood vent."
+            width="375"
+            height="375" />
+        </picture>
+      </div>
+      <div class="addon">
+        <h3>Rotisserie Kit</h3>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/rotisserie-m.webp" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/rotisserie.webp" />
+          <img
+            class="cleaning__addon"
+            aria-hidden="true"
+            decoding="async"
+            loading="lazy"
+            src="/src/images/rotisserie.webp"
+            alt="A grill with a rotisserie kit."
+            width="375"
+            height="375" />
+        </picture>
+      </div>
+      <div class="addon">
+        <h3>Cabinents/Trash Can Area</h3>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/trash-m.webp" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/trash.webp" />
+          <img
+            class="cleaning__addon"
+            aria-hidden="true"
+            decoding="async"
+            loading="lazy"
+            src="/src/images/trash.webp"
+            alt="A zoomed in shot of the drawers on grill island."
+            width="375"
+            height="375" />
+        </picture>
+      </div>
+      <div class="addon">
+        <h3>Mini Fridge</h3>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/mini-fridge-m.webp" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/mini-fridge.webp" />
+          <img
+            class="cleaning__addon"
+            aria-hidden="true"
+            decoding="async"
+            loading="lazy"
+            src="/src/images/mini-fridge.webp"
+            alt="A mini-fridge that is part of an outdoor island."
+            width="375"
+            height="375" />
+        </picture>
+      </div>
+      <div class="addon">
+        <h3>Sink</h3>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/sink-m.webp" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/sink.webp" />
+          <img
+            class="cleaning__addon img--right"
+            aria-hidden="true"
+            decoding="async"
+            loading="lazy"
+            src="/src/images/sink.webp"
+            alt="A grill with a sink."
+            width="375"
+            height="375" />
+        </picture>
+      </div>
+      <div class="addon">
+        <h3>Doors</h3>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/doors-m.webp" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/doors.webp" />
+          <img
+            class="cleaning__addon"
+            aria-hidden="true"
+            decoding="async"
+            loading="lazy"
+            src="/src/images/doors.webp"
+            alt="A zoomed in shot of a grill with multiple doors."
+            width="375"
+            height="375" />
+        </picture>
+      </div>
+      <div class="addon">
+        <h3>Side Burners</h3>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/side-burners-m.webp" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/side-burners.webp" />
+          <img
+            class="cleaning__addon"
+            aria-hidden="true"
+            decoding="async"
+            loading="lazy"
+            src="/src/images/side-burners.webp"
+            alt="A grill with a side burner."
+            width="375"
+            height="375" />
+        </picture>
+      </div>
+    </section>
+
+    <section class="cleaning__section container flex">
+      <div class="left">
+        <h3>Every Cleaning Visit Includes a Complimentary BBQ Tune-Up</h3>
+        <p>While a cleaning doesn’t guarantee that every component will function perfectly, we do perform several key tune-ups during the process—including realigning electrodes, lubricating valves, and thoroughly cleaning the burners.</p>
+        <p>If we can make a minor repair on the spot, we’ll take care of it at no extra charge. For parts that need replacement, we’ll inform you right away and provide a fair quote for ordering and installation.</p>
+      </div>
+      <div class="right">
+        <div class="image__div--right">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="/src/images/fixing-m.webp" />
+            <source
+              media="(min-width: 601px)"
+              srcset="/src/images/fixing.webp" />
+            <img
+              class="cleaning__image"
+              aria-hidden="true"
+              decoding="async"
+              loading="lazy"
+              src="/src/images/fixing.webp"
+              alt="Truck with trailer."
+              width="375"
+              height="375" />
+          </picture>
+        </div>
+        <div class="cleaning__cta flex">
+          <a
+            href="/schedule.html"
+            class="card__button">
+            Book Online
+          </a>
+          <a
+            href="tel:702-480-4234"
+            class="card__button">
+            Call 702-480-4234
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <section class="footer__right-section">
+        <div class="footer_logo">
+          <a href="/index.html">
+            <img src="/src/images/logo-black-outline.svg" />
+          </a>
+        </div>
+        <p class="footer__right-paragraph">Clean grills, happy meals!</p>
+      </section>
+      <section class="footer__left-section flex">
+        <ul class="footer__links">
+          <li class="footer__link-item">
+            <h2 class="footer__link-header">About</h2>
+          </li>
+          <li class="footer__link-item">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/about.html">About Us</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/about_cleaning.html">About BBQ Cleaning</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/pricing_cleaning.html">BBQ Cleaning Pricing</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/pricing_repair.html">BBQ Repair Pricing</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/before_after.html">Before & After</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/FAQs">FAQs</a>
+          </li>
+        </ul>
+        <ul class="footer__links">
+          <li class="footer__link-item">
+            <h3 class="footer__link-header">Reach Out</h3>
+          </li>
+          <li class="footer__link-item">
+            <a href="/schedule.html">Schedule Service</a>
+          </li>
+          <li class="footer__link-item footer__link-item--phone">
+            <a href="tel:702-480-4234">702-480-4234</a>
+          </li>
+        </ul>
+      </section>
+      <section class="disclosures">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/Terms_of_Use.html">Terms of Use</a>
+      </section>
+    </footer>
+    <script
+      src=""
+      async
+      defer></script>
+  </body>
+</html>

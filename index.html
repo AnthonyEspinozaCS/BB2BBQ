@@ -6,45 +6,126 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
     <title>Back 2 New BBQ</title>
-    <meta name="description" content="A service to restore your grill back to new." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <script defer src="/src/nav.js"></script>
-    <script src="https://kit.fontawesome.com/1f9c2028d8.js" crossorigin="anonymous"></script>
+    <meta
+      name="description"
+      content="A service to restore your grill back to new." />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="/src/style.css" />
+    <script
+      defer
+      src="/src/nav.js"></script>
+    <script
+      src="https://kit.fontawesome.com/1f9c2028d8.js"
+      crossorigin="anonymous"></script>
   </head>
   <body class="flex">
     <div class="overlay-layer hidden"></div>
-    <section class="overlay-section flex hidden" data-visible="false">
+    <section
+      class="overlay-section flex hidden"
+      data-visible="false">
       <h2 class="fs-paragraph">Request A Call</h2>
       <button id="overlay-button"><i class="fa-solid fa-x fs-paragraph"></i></button>
     </section>
 
     <header class="header">
       <div class="header__logo">
-        <a href="/index.html"><img class="logo" src="/src/images/logo-black-outline.svg" /></a>
+        <a href="/index.html">
+          <img
+            class="logo"
+            src="/src/images/logo-black-outline.svg" />
+        </a>
       </div>
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-        <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="40px" height="40px">
-          <rect class="line top" width="80" height="10" x="10" y="25" rx="5"></rect>
-          <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
-          <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false">
+        <svg
+          fill="var(--button-color)"
+          class="hamburger"
+          viewBox="0 0 100 100"
+          width="40px"
+          height="40px">
+          <rect
+            class="line top"
+            width="80"
+            height="10"
+            x="10"
+            y="25"
+            rx="5"></rect>
+          <rect
+            class="line middle"
+            width="80"
+            height="10"
+            x="10"
+            y="45"
+            rx="5"></rect>
+          <rect
+            class="line bottom"
+            width="80"
+            height="10"
+            x="10"
+            y="65"
+            rx="5"></rect>
         </svg>
       </button>
       <nav>
-        <ul id="primary-navigation" class="header__nav" data-visible="false">
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/pricing.html">Pricing</a></li>
+        <ul
+          id="primary-navigation"
+          class="header__nav"
+          data-visible="false">
+          <li class="dropdown">
+            Services
+            <ul class="dropdown-content">
+              <li><a href="/pricing_cleaning.html">BBQ Cleaning</a></li>
+              <li><a href="/pricing_repair.html">BBQ Repair</a></li>
+              <li><a href="/pricing_sales.html">BBQ Replacement/Sales</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            About
+            <ul class="dropdown-content">
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/about_cleaning.html">About BBQ Cleaning</a></li>
+              <li><a href="/about_zero.html">Zero Contact Services</a></li>
+            </ul>
+          </li>
+          <!--           <li><a href="/about.html">About</a></li>
+          <li><a href="/pricing.html">Pricing</a></li> -->
           <li><a href="/before_after.html">Before & After</a></li>
           <li><a href="/schedule.html">Schedule</a></li>
-          <li><a id="req-button" href="/call.html">Request A Call</a></li>
+          <li>
+            <a
+              href="tel:702-480-4234"
+              class="nav__cta">
+              Call or Text a Pro 📞
+              <span class="nav__span">702-480-4234</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="hero flex">
+        <video
+          playsinline
+          autoplay
+          muted
+          loop
+          poster
+          class="hero__video">
+          <source
+            src="src/cleaning.mp4"
+            type="video/mp4" />
+        </video>
         <h1 class="hero__header container">
           Back 2 New
           <br />
@@ -61,9 +142,20 @@
           is a mobile cleaning service that is dedicated to restoring and reinvograting your grill.
         </h2>
         <picture>
-          <source media="(max-width: 600px" srcset="/src/images/guarantee-m.png" />
-          <source media="(min-width: 601px" srcset="/src/images/guarantee.png" />
-          <img aria-hidden="true" decoding="async" loading="lazy" src="/src/images/guarantee-m.png" alt="Satisfaction Guarantee sticker." width="375" height="375" />
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/guarantee-m.png" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/guarantee.png" />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            loading="lazy"
+            src="/src/images/guarantee-m.png"
+            alt="Satisfaction Guarantee sticker."
+            width="375"
+            height="375" />
         </picture>
       </section>
 
@@ -73,62 +165,95 @@
           <i class="fa-solid fa-screwdriver-wrench"></i>
           <h3 class="fs-header-3">Repair</h3>
           <p class="fs-paragraph">Does your grill need some TLC? Let our technicians handle it.</p>
-          <button class="card__button fs-paragraph">Learn More</button>
+          <a
+            href="/"
+            class="card__button fs-paragraph">
+            Learn More
+          </a>
         </div>
         <div class="section__card flex fs-header-2">
           <i class="fa-solid fa-hand-sparkles"></i>
           <h3 class="fs-header-3">Cleaning</h3>
           <p class="fs-paragraph">The only thing a grill should add to food is flavor.</p>
-          <button class="card__button fs-paragraph">Learn More</button>
+          <a class="card__button fs-paragraph">Learn More</a>
         </div>
         <div class="section__card flex fs-header-2">
-          <i class="fa-solid fa-truck-front"></i>
-          <h3 class="fs-header-3">Mobile</h3>
-          <p class="fs-paragraph">We make taking care of your grill easy and convenient.</p>
-          <button class="card__button fs-paragraph">Learn More</button>
+          <i class="fa-solid fa-fire-burner"></i>
+          <h3 class="fs-header-3">Replacement</h3>
+          <p class="fs-paragraph">Our technicians can help you find a grill that fits your family's needs.</p>
+          <a class="card__button fs-paragraph">Learn More</a>
         </div>
       </section>
 
       <!--Reviews Section-->
       <section class="section__3 container">
         <h2 class="section__3--header center fs-header-2">Back 2 New Happy Customers</h2>
-        <img src="/src/images/stars.png" alt="5 Red Stars" />
+        <img
+          src="/src/images/stars.png"
+          alt="5 Red Stars" />
         <section class="section__3-grid">
           <div class="section__3-review">
-            <img class="section__3-profile" src="/src/images/generic_user.png" alt="generic profile picture." />
+            <img
+              class="section__3-profile"
+              src="/src/images/generic_user.png"
+              alt="generic profile picture." />
             <h3 class="fs-header-3">Jim N.</h3>
-            <img class="section__3-stars" src="/src/images/stars.png" alt="5 Red Stars" />
+            <img
+              class="section__3-stars"
+              src="/src/images/stars.png"
+              alt="5 Red Stars" />
             <p class="fs-paragraph">
               I have used Back 2 new for years and can highly recommend their services. Our grill looks new every time they clean it. The racks, knobs, bricks, drip pan are removed, cleaned, polished to a like new finish removing all the leftover
               grime. Well worth the money!
             </p>
           </div>
           <div class="section__3-review">
-            <img class="section__3-profile" src="/src/images/marc.jpeg" />
+            <img
+              class="section__3-profile"
+              src="/src/images/marc.jpeg" />
             <h3 class="fs-header-3">Marc M.</h3>
-            <img class="section__3-stars" src="/src/images/stars.png" alt="5 Red Stars" />
+            <img
+              class="section__3-stars"
+              src="/src/images/stars.png"
+              alt="5 Red Stars" />
             <p class="fs-paragraph">These guys have been cleaning my grill for over 5 years. They do excellent work, and do it quick making your much used grill look like it just got delivered. Very happy customer.</p>
           </div>
           <div class="section__3-review">
-            <img class="section__3-profile" src="/src/images/generic_user.png" alt="generic profile picture." />
+            <img
+              class="section__3-profile"
+              src="/src/images/generic_user.png"
+              alt="generic profile picture." />
             <h3 class="fs-header-3">Jarrod B.</h3>
-            <img class="section__3-stars" src="/src/images/stars.png" alt="5 Red Stars" />
+            <img
+              class="section__3-stars"
+              src="/src/images/stars.png"
+              alt="5 Red Stars" />
             <p class="fs-paragraph">
               This is an amazing company. A friend of mine suggested them to me and said they were really good. I hadn't cleaned my BBQ in over 3 years. I dreaded doing it my self. So I gave them a call and out they came. They were on time, friendly
               and professional. My BBQ looked almost as good as the day I bought it.
             </p>
           </div>
           <div class="section__3-review">
-            <img class="section__3-profile" src="/src/images/generic_user.png" alt="generic profile picture." />
+            <img
+              class="section__3-profile"
+              src="/src/images/generic_user.png"
+              alt="generic profile picture." />
             <h3 class="fs-header-3">Larry R.</h3>
-            <img class="section__3-stars" src="/src/images/stars.png" alt="5 Red Stars" />
+            <img
+              class="section__3-stars"
+              src="/src/images/stars.png"
+              alt="5 Red Stars" />
             <p class="fs-paragraph">
               Back 2New BBQ did a service on our grill this afternoon and what a fantabulous job Billy and Manuel did! Back 2New BBQ have been cleaning our grill for the past 5 years and the service is just as good today as it was the first time they
               cleaned our grill! Thank you very much for the excellent job Art and guys, wishing you and yours a safe and Happy Holidays!
             </p>
           </div>
         </section>
-        <button class="card__button fs-paragraph"><a href="https://www.yelp.com/biz/back-2-new-bbq-las-vegas-2#reviews">More Reviews</a></button>
+        <a
+          href="https://www.yelp.com/biz/back-2-new-bbq-las-vegas-2#reviews"
+          class="card__button fs-paragraph">
+          More Reviews
+        </a>
       </section>
     </main>
 
@@ -141,7 +266,9 @@
       prompt-avatar="https://firebasestorage.googleapis.com/v0/b/highlevel-backend.appspot.com/o/locationPhotos%2FyYZ40zL4OIDXcocGY38D%2Fchat-widget-person?alt=media&token=03463d2d-9b63-4ef0-9b6c-a40cbcf2a0d0"
       agency-name="Back 2 New BBQ"
       agency-website="http://back2newbbq.com/"></chat-widget>
-    <script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"></script>
+    <script
+      src="https://widgets.leadconnectorhq.com/loader.js"
+      data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"></script>
 
     <footer class="footer">
       <section class="footer__right-section">
@@ -161,13 +288,22 @@
             <a href="/index.html">Home</a>
           </li>
           <li class="footer__link-item">
-            <a href="/about.html">About</a>
+            <a href="/about.html">About Us</a>
           </li>
           <li class="footer__link-item">
-            <a href="/pricing.html">Pricing</a>
+            <a href="/about_cleaning.html">About BBQ Cleaning</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/pricing_cleaning.html">BBQ Cleaning Pricing</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/pricing_repair.html">BBQ Repair Pricing</a>
           </li>
           <li class="footer__link-item">
             <a href="/before_after.html">Before & After</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/FAQs">FAQs</a>
           </li>
         </ul>
         <ul class="footer__links">
@@ -178,11 +314,18 @@
             <a href="/schedule.html">Schedule Service</a>
           </li>
           <li class="footer__link-item footer__link-item--phone">
-            <a href="tel:702-555-5555">(702)555-5555</a>
+            <a href="tel:702-480-4234">702-480-4234</a>
           </li>
         </ul>
       </section>
+      <section class="disclosures">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/Terms_of_Use.html">Terms of Use</a>
+      </section>
     </footer>
-    <script src="" async defer></script>
+    <script
+      src=""
+      async
+      defer></script>
   </body>
 </html>

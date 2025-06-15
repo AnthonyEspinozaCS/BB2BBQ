@@ -1,3 +1,6 @@
+let bundle1 = 309;
+let bundle2 = 440;
+
 function linkDisplay(number) {
   const button = document.getElementById("button-link-" + number);
   const linkDiv = document.querySelector(".schedule__section-links-" + number);
@@ -25,13 +28,25 @@ function linkDisplay(number) {
       threeButtonDiv.classList.toggle("hidden");
     }, 500);
   }
-
-  console.log(getComputedStyle(linkDiv, null).display);
 }
 
 function changeDisplay(number) {
   const button = document.getElementById("button-" + number);
   const scheduleDiv = document.getElementById("schedule-" + number);
+  const subtotal = document.getElementById("subtotal");
+  const leftSide1 = document.getElementById("left-side--1");
+  const leftSide2 = document.getElementById("left-side--2");
+
+  leftSide1.classList.toggle("hidden");
+  leftSide1.classList.toggle("flex");
+  leftSide2.classList.toggle("flex");
+  leftSide2.classList.toggle("hidden");
+
+  if (number === 1) {
+    subtotal.textContent += bundle1;
+  } else {
+    subtotal.textContent += bundle2;
+  }
 
   if (scheduleDiv.style.display === "none") {
     scheduleDiv.style.display = "block";
@@ -39,3 +54,15 @@ function changeDisplay(number) {
     scheduleDiv.style.display = "none";
   }
 }
+
+const ch1 = document.getElementById("ch-1");
+const subtotal = document.getElementById("subtotal");
+ch1.addEventListener("change", function () {
+  if (this.checked) {
+    bundle1 += 39;
+    subtotal.textContent = bundle1;
+  } else {
+    bundle1 -= 39;
+    subtotal.textContent = bundle1;
+  }
+});

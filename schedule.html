@@ -6,40 +6,112 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
     <title>Back 2 New BBQ</title>
-    <meta name="description" content="A service to restore your grill back to new." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/src/style.css" />
-    <link rel="stylesheet" href="/src/schedule.css" />
-    <script src="https://kit.fontawesome.com/1f9c2028d8.js" crossorigin="anonymous"></script>
-    <script defer src="/src/nav.js"></script>
+    <meta
+      name="description"
+      content="A service to restore your grill back to new." />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="/src/style.css" />
+    <link
+      rel="stylesheet"
+      href="/src/schedule.css" />
+    <script
+      src="https://kit.fontawesome.com/1f9c2028d8.js"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="/src/nav.js"></script>
   </head>
   <body class="flex">
     <div class="overlay-layer hidden"></div>
-    <section class="overlay-section flex hidden" data-visible="false">
+    <section
+      class="overlay-section flex hidden"
+      data-visible="false">
       <h2 class="fs-paragraph">Request A Call</h2>
       <button id="overlay-button"><i class="fa-solid fa-x fs-paragraph"></i></button>
     </section>
 
     <header class="header">
       <div class="header__logo">
-        <a href="/index.html"><img class="logo" src="/src/images/logo-black-outline.svg" /></a>
+        <a href="/index.html">
+          <img
+            class="logo"
+            src="/src/images/logo-black-outline.svg" />
+        </a>
       </div>
-      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-        <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="40px" height="40px">
-          <rect class="line top" width="80" height="10" x="10" y="25" rx="5"></rect>
-          <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"></rect>
-          <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"></rect>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false">
+        <svg
+          fill="var(--button-color)"
+          class="hamburger"
+          viewBox="0 0 100 100"
+          width="40px"
+          height="40px">
+          <rect
+            class="line top"
+            width="80"
+            height="10"
+            x="10"
+            y="25"
+            rx="5"></rect>
+          <rect
+            class="line middle"
+            width="80"
+            height="10"
+            x="10"
+            y="45"
+            rx="5"></rect>
+          <rect
+            class="line bottom"
+            width="80"
+            height="10"
+            x="10"
+            y="65"
+            rx="5"></rect>
         </svg>
       </button>
       <nav>
-        <ul id="primary-navigation" class="header__nav" data-visible="false">
-          <li><a href="/about.html">About</a></li>
-          <li><a href="/pricing.html">Pricing</a></li>
+        <ul
+          id="primary-navigation"
+          class="header__nav"
+          data-visible="false">
+          <li class="dropdown">
+            Services
+            <ul class="dropdown-content">
+              <li><a href="/pricing_cleaning.html">BBQ Cleaning</a></li>
+              <li><a href="/pricing_repair.html">BBQ Repair</a></li>
+              <li><a href="/pricing_sales.html">BBQ Replacement/Sales</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            About
+            <ul class="dropdown-content">
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/about_cleaning.html">About BBQ Cleaning</a></li>
+              <li><a href="/about_zero.html">Zero Contact Services</a></li>
+            </ul>
+          </li>
+          <!--           <li><a href="/about.html">About</a></li>
+          <li><a href="/pricing.html">Pricing</a></li> -->
           <li><a href="/before_after.html">Before & After</a></li>
           <li><a href="/schedule.html">Schedule</a></li>
-          <li><a id="req-button" href="/call.html">Request A Call</a></li>
+          <li>
+            <a
+              href="tel:702-480-4234"
+              class="nav__cta">
+              Call or Text a Pro 📞
+              <span class="nav__span">702-480-4234</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -49,16 +121,37 @@
         <h1 class="schedule__hero-header fs-header-1">Schedule Our Service</h1>
         <p class="fs-paragraph container">We make scheduling your service easy and convenient. Simply select the service you'd like to schedule.</p>
         <picture>
-          <source media="(max-width: 600px" srcset="/src/images/appointment-m.jpg" />
-          <source media="(min-width: 601px" srcset="/src/images/appointment.jpg" />
-          <img aria-hidden="true" decoding="async" src="/src/images/appointment-m.jpg" alt="A calendar and hourglass." />
+          <source
+            media="(max-width: 600px"
+            srcset="/src/images/appointment-m.jpg" />
+          <source
+            media="(min-width: 601px"
+            srcset="/src/images/appointment.jpg" />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/src/images/appointment-m.jpg"
+            alt="A calendar and hourglass." />
         </picture>
       </section>
 
-      <section id="schedule-link" class="schedule__section-1 container center">
-        <section class="schedule__section-buttons flex" data-visible="true">
+      <section
+        id="schedule-link"
+        class="schedule__section-1 container center">
+        <h2>
+          The time you schedule your appointment is the beginning of a
+          <span class="text-red">2 hour</span>
+          window we could arrive.
+        </h2>
+        <p>i.e: 8am appointment -> 8 - 10am arrival time.</p>
+        <section
+          class="schedule__section-buttons flex"
+          data-visible="true">
           <a href="#schedule-link">
-            <button id="button-link-1" class="fs-header-1" onclick="linkDisplay(1)">
+            <button
+              id="button-link-1"
+              class="fs-header-1"
+              onclick="linkDisplay(1)">
               <i class="fa-solid fa-hand-sparkles"></i>
               Cleaning
             </button>
@@ -77,24 +170,56 @@
           </a>
         </section>
 
-        <section class="schedule__section-links-1 hidden" data-visible="false">
-          <div class="schedule__left-side flex fs-header-3">
-            <button id="button-1" onclick="changeDisplay(1)">Bundle #1</button>
-
-            <!-- Calendly link widget begin -->
-            <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-            <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-            <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/anthony1337/grill-cleaning?background_color=333333&text_color=ffffff&primary_color=ffffff'});return false;">Bundle #2</a>
-            <!-- Calendly link widget end -->
+        <section
+          class="schedule__section-links-1 hidden"
+          data-visible="false">
+          <div class="schedule__left-side fs-header-3">
+            <div
+              id="left-side--1"
+              class="left-side--1 flex">
+              <button
+                id="button-1"
+                onclick="changeDisplay(1)">
+                Bundle #1
+              </button>
+              <button
+                id="button-2"
+                onclick="changeDisplay(2)">
+                Bundle #2
+              </button>
+            </div>
+            <div
+              id="left-side--2"
+              class="left-side--2 hidden">
+              <form action="check-boxes">
+                <label class="form-control">
+                  <input
+                    id="ch-1"
+                    type="checkbox"
+                    name="checkbox"
+                    class="checkbox" />
+                  Side Burner - $39
+                </label>
+              </form>
+            </div>
           </div>
           <div class="schedule__right-side">
+            <h3>
+              Your current subtotal is: $
+              <span
+                id="subtotal"
+                class="text-orange"></span>
+            </h3>
             <!-- Calendly inline widget begin -->
             <div
               id="schedule-1"
               class="calendly-inline-widget"
               data-url="https://calendly.com/anthony1337/grill-cleaning?hide_gdpr_banner=1&background_color=333333&text_color=ffffff&primary_color=ffffff"
               style="min-width: 320px; height: 95vh; display: none"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <script
+              type="text/javascript"
+              src="https://assets.calendly.com/assets/external/widget.js"
+              async></script>
             <!-- Calendly inline widget end -->
           </div>
         </section>
@@ -141,6 +266,9 @@
         </ul>
       </section>
     </footer>
-    <script src="/src/scheduling.js" async defer></script>
+    <script
+      src="/src/scheduling.js"
+      async
+      defer></script>
   </body>
 </html>

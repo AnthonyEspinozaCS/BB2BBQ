@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <title>Back 2 New BBQ</title>
+    <meta
+      name="description"
+      content="A service to restore your grill back to new." />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="/src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1f9c2028d8.js"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="/src/nav.js"></script>
+  </head>
+  <body class="flex">
+    <div class="overlay-layer hidden"></div>
+    <section
+      class="overlay-section flex hidden"
+      data-visible="false">
+      <h2 class="fs-paragraph">Request A Call</h2>
+      <button id="overlay-button"><i class="fa-solid fa-x fs-paragraph"></i></button>
+    </section>
+
+    <header class="header">
+      <div class="header__logo">
+        <a href="/index.html">
+          <img
+            class="logo"
+            src="/src/images/logo-black-outline.svg" />
+        </a>
+      </div>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false">
+        <svg
+          fill="var(--button-color)"
+          class="hamburger"
+          viewBox="0 0 100 100"
+          width="40px"
+          height="40px">
+          <rect
+            class="line top"
+            width="80"
+            height="10"
+            x="10"
+            y="25"
+            rx="5"></rect>
+          <rect
+            class="line middle"
+            width="80"
+            height="10"
+            x="10"
+            y="45"
+            rx="5"></rect>
+          <rect
+            class="line bottom"
+            width="80"
+            height="10"
+            x="10"
+            y="65"
+            rx="5"></rect>
+        </svg>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          class="header__nav"
+          data-visible="false">
+          <li class="dropdown">
+            Services
+            <ul class="dropdown-content">
+              <li><a href="/pricing_cleaning.html">BBQ Cleaning</a></li>
+              <li><a href="/pricing_repair.html">BBQ Repair</a></li>
+              <li><a href="/pricing_sales.html">BBQ Replacement/Sales</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            About
+            <ul class="dropdown-content">
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/about_cleaning.html">About BBQ Cleaning</a></li>
+              <li><a href="/about_zero.html">Zero Contact Services</a></li>
+            </ul>
+          </li>
+          <!--           <li><a href="/about.html">About</a></li>
+          <li><a href="/pricing.html">Pricing</a></li> -->
+          <li><a href="/before_after.html">Before & After</a></li>
+          <li><a href="/schedule.html">Schedule</a></li>
+          <li>
+            <a
+              href="tel:702-480-4234"
+              class="nav__cta">
+              Call or Text a Pro 📞
+              <span class="nav__span">702-480-4234</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="repair__hero">
+      <h1>BBQ Repair</h1>
+      <h2>WE REPAIR BARBECUES, SMOKERS, FIREPLACES AND PATIO HEATERS</h2>
+      <img
+        class="repair__img"
+        src="/src/images/b&a.webp"
+        alt="A grill before and after." />
+    </section>
+
+    <section class="repair__section container">
+      <div class="estimate">
+        <h2>Get Your Estimate</h2>
+        <h2>COMING SOON!!!</h2>
+      </div>
+    </section>
+
+    <section class="repair__section--2 container">
+      <img
+        class="stars"
+        src="/src/images/stars.png"
+        alt="5 stars." />
+      <h2>100+ Five-Star Reviews. Precision BBQ Repairs.</h2>
+
+      <h3>BBQ Repairs We Handle</h3>
+      <div class="repair__options">
+        <div>
+          <img
+            class="repair__option--img"
+            src="/src/images/burner.webp"
+            alt="Close up of a gas burner." />
+          <h3>Burners</h3>
+        </div>
+        <div>
+          <img
+            class="repair__option--img"
+            src="/src/images/valve.webp"
+            alt="Gas valve for a grill." />
+          <h3>Valves</h3>
+        </div>
+        <div>
+          <img
+            class="repair__option--img"
+            src="/src/images/igniter.webp"
+            alt="Grill burner igniter." />
+          <h3>Ignitions & Igniters</h3>
+        </div>
+        <div>
+          <img
+            class="repair__option--img"
+            src="/src/images/grates.webp"
+            alt="New grates being installed on a grill." />
+          <h3>Grates</h3>
+        </div>
+        <div>
+          <img
+            class="repair__option--img"
+            src="/src/images/briquettes.webp"
+            alt="Grill with briquettes." />
+          <h3>Briquettes</h3>
+        </div>
+        <div>
+          <img
+            class="repair__option--img"
+            src="/src/images/briquette_tray.webp"
+            alt="A briquette tray attachment." />
+          <h3>Briquette Tray</h3>
+        </div>
+        <div>
+          <img
+            class="repair__option--img"
+            src="/src/images/knobs.webp"
+            alt="Four grill knobs." />
+          <h3>Knobs</h3>
+        </div>
+        <div>
+          <img
+            class="repair__option--img"
+            src="/src/images/more.webp"
+            alt="A grill island with pizza oven, fridge, and more." />
+          <h3>AND More!</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="repair__section--2 repair--left container">
+      <h2>BBQ Repair by Trusted Professionals</h2>
+      <p>
+        Your grill isn’t just an appliance—it’s the heart of your outdoor kitchen. When performance starts to dip or parts wear out, don’t replace it—repair it. Pro Grill offers expert BBQ repairs that save you money, enhance safety, and extend the
+        life of your grill.
+      </p>
+      <h2>Why Repair Instead of Replace?</h2>
+      <ul class="repair__list">
+        <li>
+          <img
+            src="/src/images/bbq-list.webp"
+            alt="A bbq with smoke lines." />
+          <span class="bold">Save Money:</span>
+          Replacing burners, igniters, or valves costs far less than buying a new grill.
+        </li>
+        <li>
+          <img
+            src="/src/images/bbq-list.webp"
+            alt="A bbq with smoke lines." />
+          <span class="bold">Eco-Friendly:</span>
+          Repairs reduce landfill waste and support sustainable living.
+        </li>
+        <li>
+          <img
+            src="/src/images/bbq-list.webp"
+            alt="A bbq with smoke lines." />
+          <span class="bold">Better Performance:</span>
+          Fixing uneven heat, clogged burners, and ignition issues brings your grill back to life.
+        </li>
+        <li>
+          <img
+            src="/src/images/bbq-list.webp"
+            alt="A bbq with smoke lines." />
+          <span class="bold">Safer Grilling:</span>
+          Avoid risks like gas leaks or flare-ups with regular, professional maintenance.
+        </li>
+      </ul>
+      <h2>Why Choose Pro Grill?</h2>
+      <ul class="repair__list">
+        <li>
+          <img
+            src="/src/images/bbq-list.webp"
+            alt="A bbq with smoke lines." />
+          <span class="bold">Experts in Top Brands:</span>
+          From Lynx to Weber, we service all major BBQ brands.
+        </li>
+        <li>
+          <img
+            src="/src/images/bbq-list.webp"
+            alt="A bbq with smoke lines." />
+          <span class="bold">Fast, On-Site Service:</span>
+          Most repairs are completed in a single visit.
+        </li>
+        <li>
+          <img
+            src="/src/images/bbq-list.webp"
+            alt="A bbq with smoke lines." />
+          <span class="bold">Honest & Insure:</span>
+          Transparent pricing, no upselling, and fully insured technicians.
+        </li>
+        <li>
+          <img
+            src="/src/images/bbq-list.webp"
+            alt="A bbq with smoke lines." />
+          <span class="bold">Hundreds of 5-Star Review:</span>
+          Our customers love our reliability, professionalism, and results.
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <section class="footer__right-section">
+        <div class="footer_logo">
+          <a href="/index.html">
+            <img src="/src/images/logo-black-outline.svg" />
+          </a>
+        </div>
+        <p class="footer__right-paragraph">Clean grills, happy meals!</p>
+      </section>
+      <section class="footer__left-section flex">
+        <ul class="footer__links">
+          <li class="footer__link-item">
+            <h2 class="footer__link-header">About</h2>
+          </li>
+          <li class="footer__link-item">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/about.html">About Us</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/about_cleaning.html">About BBQ Cleaning</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/pricing_cleaning.html">BBQ Cleaning Pricing</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/pricing_repair.html">BBQ Repair Pricing</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/before_after.html">Before & After</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/FAQs">FAQs</a>
+          </li>
+        </ul>
+        <ul class="footer__links">
+          <li class="footer__link-item">
+            <h3 class="footer__link-header">Reach Out</h3>
+          </li>
+          <li class="footer__link-item">
+            <a href="/schedule.html">Schedule Service</a>
+          </li>
+          <li class="footer__link-item footer__link-item--phone">
+            <a href="tel:702-480-4234">702-480-4234</a>
+          </li>
+        </ul>
+      </section>
+      <section class="disclosures">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/Terms_of_Use.html">Terms of Use</a>
+      </section>
+    </footer>
+    <script
+      src=""
+      async
+      defer></script>
+  </body>
+</html>

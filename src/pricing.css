@@ -90,16 +90,24 @@
 }
 
 .pricing__card span {
-  color: firebrick;
+  color: #fa2a0f;
   font-weight: 900;
   font-style: italic;
   white-space: nowrap;
 }
 
 .pricing__card ul {
-  padding: 2rem 1rem;
+  padding: 2rem 0rem;
   margin: 0;
   list-style: none;
+}
+
+.pricing__card li {
+  padding-bottom: 1rem;
+}
+
+.pricing__card li:last-child {
+  padding-bottom: 0rem;
 }
 
 .pricing__card a {

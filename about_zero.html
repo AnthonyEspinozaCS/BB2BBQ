@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <title>Back 2 New BBQ</title>
+    <meta
+      name="description"
+      content="A service to restore your grill back to new." />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="/src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/1f9c2028d8.js"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="/src/nav.js"></script>
+  </head>
+  <body class="flex">
+    <div class="overlay-layer hidden"></div>
+    <section
+      class="overlay-section flex hidden"
+      data-visible="false">
+      <h2 class="fs-paragraph">Request A Call</h2>
+      <button id="overlay-button"><i class="fa-solid fa-x fs-paragraph"></i></button>
+    </section>
+
+    <header class="header">
+      <div class="header__logo">
+        <a href="/index.html">
+          <img
+            class="logo"
+            src="/src/images/logo-black-outline.svg" />
+        </a>
+      </div>
+      <button
+        class="mobile-nav-toggle"
+        aria-controls="primary-navigation"
+        aria-expanded="false">
+        <svg
+          fill="var(--button-color)"
+          class="hamburger"
+          viewBox="0 0 100 100"
+          width="40px"
+          height="40px">
+          <rect
+            class="line top"
+            width="80"
+            height="10"
+            x="10"
+            y="25"
+            rx="5"></rect>
+          <rect
+            class="line middle"
+            width="80"
+            height="10"
+            x="10"
+            y="45"
+            rx="5"></rect>
+          <rect
+            class="line bottom"
+            width="80"
+            height="10"
+            x="10"
+            y="65"
+            rx="5"></rect>
+        </svg>
+      </button>
+      <nav>
+        <ul
+          id="primary-navigation"
+          class="header__nav"
+          data-visible="false">
+          <li class="dropdown">
+            Services
+            <ul class="dropdown-content">
+              <li><a href="/pricing_cleaning.html">BBQ Cleaning</a></li>
+              <li><a href="/pricing_repair.html">BBQ Repair</a></li>
+              <li><a href="/pricing_sales.html">BBQ Replacement/Sales</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            About
+            <ul class="dropdown-content">
+              <li><a href="/about.html">About Us</a></li>
+              <li><a href="/about_cleaning.html">About BBQ Cleaning</a></li>
+              <li><a href="/about_zero.html">Zero Contact Services</a></li>
+            </ul>
+          </li>
+          <!--           <li><a href="/about.html">About</a></li>
+          <li><a href="/pricing.html">Pricing</a></li> -->
+          <li><a href="/before_after.html">Before & After</a></li>
+          <li><a href="/schedule.html">Schedule</a></li>
+          <li>
+            <a
+              href="tel:702-480-4234"
+              class="nav__cta">
+              Call or Text a Pro 📞
+              <span class="nav__span">702-480-4234</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="zero__hero">
+        <h1 class="zero__hero-header container fs-header-1">Zero Contact Services</h1>
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="/src/images/zero_contact-m.jpg" />
+          <source
+            media="(min-width: 601px)"
+            srcset="/src/images/zero_contact.jpg" />
+          <img
+            aria-hidden="true"
+            decoding="async"
+            src="/src/images/zero_contact-m.jpg"
+            alt="Lady at a cafe paying for something on her laptop." />
+        </picture>
+      </section>
+
+      <section class="zero__section container flex">
+        <h2>Back 2 New Zero Contact Services</h2>
+        <p>In response to the challenges of 2020 and 2021, we introduced zero-contact service procedures—and we’re proud to continue offering them for your safety and convenience.</p>
+        <p>
+          No pens, no paper, no contact—just seamless, hassle-free service performed outdoors while you go about your day. Everything from scheduling to payment can be handled remotely via phone or email, saving you time and eliminating the need to
+          wait around or interact in person.
+        </p>
+        <p>It’s a cleaner, safer, and more convenient way to take care of your grill—without disrupting your routine.</p>
+        <p>We're committed to providing you with top-level service while keeping things as easy and stress-free as possible. We truly hope you and your family are staying healthy and safe.</p>
+        <a
+          href="/schedule.html"
+          class="fs-paragraph card__button">
+          Schedule
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="footer__right-section">
+        <div class="footer_logo">
+          <a href="/index.html">
+            <img src="/src/images/logo-black-outline.svg" />
+          </a>
+        </div>
+        <p class="footer__right-paragraph">Clean grills, happy meals!</p>
+      </section>
+      <section class="footer__left-section flex">
+        <ul class="footer__links">
+          <li class="footer__link-item">
+            <h2 class="footer__link-header">About</h2>
+          </li>
+          <li class="footer__link-item">
+            <a href="/index.html">Home</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/about.html">About Us</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/about_cleaning.html">About BBQ Cleaning</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/pricing_cleaning.html">BBQ Cleaning Pricing</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/pricing_repair.html">BBQ Repair Pricing</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/before_after.html">Before & After</a>
+          </li>
+          <li class="footer__link-item">
+            <a href="/FAQs">FAQs</a>
+          </li>
+        </ul>
+        <ul class="footer__links">
+          <li class="footer__link-item">
+            <h3 class="footer__link-header">Reach Out</h3>
+          </li>
+          <li class="footer__link-item">
+            <a href="/schedule.html">Schedule Service</a>
+          </li>
+          <li class="footer__link-item footer__link-item--phone">
+            <a href="tel:702-480-4234">702-480-4234</a>
+          </li>
+        </ul>
+      </section>
+      <section class="disclosures">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/Terms_of_Use.html">Terms of Use</a>
+      </section>
+    </footer>
+    <script
+      src=""
+      async
+      defer></script>
+  </body>
+</html>
