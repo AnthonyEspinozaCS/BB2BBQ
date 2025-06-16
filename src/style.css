@@ -271,7 +271,7 @@ button {
   content: " ";
   position: absolute;
   top: 0;
-  left: 95%;
+  left: 85%;
   width: auto;
   height: 100%;
   aspect-ratio: 1 / 1;
@@ -373,6 +373,20 @@ button {
 
     transform: translateX(-50%);
     border-radius: 2px;
+  }
+
+  .dropdown::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 95%;
+    width: auto;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+
+    background-image: url("/src/arrow.svg");
+    background-size: contain;
+    transition: 0.3s ease;
   }
 
   .dropdown:hover .dropdown-content {
