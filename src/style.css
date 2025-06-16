@@ -137,6 +137,10 @@ select {
   color: var(--red);
 }
 
+.text-fire {
+  color: firebrick;
+}
+
 .text-orange {
   color: var(--orange);
 }
@@ -1082,7 +1086,7 @@ a.card__button:hover {
   flex-direction: column;
   gap: 1rem;
   place-content: center;
-  padding: 2rem 0 4rem;
+  padding: 2rem 4rem 4rem;
 
   text-align: center;
   font-size: var(--fs-header-2);
@@ -1157,16 +1161,29 @@ a.card__button:hover {
 }
 
 .repair__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   padding: 0;
   margin: 0;
 }
 
 .repair__list li {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  grid-template-areas: "grill text";
 }
 
-.repair__list span {
-  margin-right: 1ch;
+.repair__list img {
+  grid-area: grill;
+  width: 100%;
+  margin: auto;
+
+  aspect-ratio: 1 / 1;
+}
+
+.repair__list p {
+  grid-area: text;
 }
 
 @media (min-width: 1024px) {
